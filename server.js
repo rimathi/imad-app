@@ -59,6 +59,8 @@ var content={
     </div>
 </body>
 </html>`
+
+return htmltemplate;
 }
 
     
