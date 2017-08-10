@@ -16,11 +16,12 @@ var content={
       This a my first article </p>
       <p> This a my first article. This a my first article 
      This a my first article 
-      This a my first article </p>
-      
-      '
+      This a my first article </p>`
+         
+    }
     
-}
+    var htmltemplate=`
+    
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
