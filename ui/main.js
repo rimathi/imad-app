@@ -7,7 +7,6 @@ var marginLeft=0;
 
 function moveRight()
 {
-    alert("I am ");
 marginLeft=marginLeft+10;
 img.style.marginLeft=marginLeft+'px';
 
