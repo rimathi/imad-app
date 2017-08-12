@@ -93,7 +93,7 @@ var articles=
     </div>
     </div>
 </body>
-</html>`
+</html>`;
 
 return htmltemplate;
 }
