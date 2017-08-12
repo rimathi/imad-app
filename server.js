@@ -21,8 +21,8 @@ var articles=
       This a my first article </p>`
          
     },
-    'article-Two':{
-    title:'Article Two | Mathivanan',
+    'article-two':{
+    title:'Article Two Mathivanan',
     heading:'Article Two',
     date:'Aug 10,2016',
     content:`<p> This a my Second article. This a my Second article 
@@ -37,8 +37,8 @@ var articles=
          
     },
     
-    'article-Three':{
-    title:'Article Third | Mathivanan',
+    'article-three':{
+    title:'Article Third  Mathivanan',
     heading:'Article Third',
     date:'Aug 10,2016',
     content:`<p> This a my Third article. This a my Third article 
