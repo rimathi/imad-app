@@ -16,7 +16,7 @@ request.onReadyStateChange=function()
     }
     }
    };
-   request.open("Get","http://rimathivanan.imad.hasura-app.io/counter");
+   request.open("Get","http://rimathivanan.imad.hasura-app.io/counter",true);
    request.send(null);
 };
 
