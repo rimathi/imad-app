@@ -5,7 +5,7 @@ button.onclick=function()
   
 request=new XMLHttpRequest();
 
-request.onReadyStateChange=function()
+request.onreadystatechange = function () {
 {
       alert("I am working");
     if(request.readyState===XMLHttpRequest.DONE)
