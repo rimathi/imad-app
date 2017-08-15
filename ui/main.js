@@ -23,9 +23,9 @@ request.onreadystatechange = function () {
 };
 
 
-var nameInput=documnet.document.getElementById("name");
+var nameInput=document.getElementById("name");
 //var nam=nameInput.value;
-var submit=documnet.document.getElementById("submit_btn");
+var submit=document.getElementById("submit_btn");
 submit.onclick=function()
 {
     alert("I am working");
