@@ -32,7 +32,7 @@ submit.onclick=function()
     var List='';
     for(i=0;i<names.length;i++)
     {
-    List+='<li>'+names[i];+'</li>';
+    List+="<li>"+names[i];+"</li>";
     }
     
     var ul=documnet.document.getElementById("nameList");
