@@ -28,7 +28,7 @@ var nameInput=document.getElementById("name");
 var submit=document.getElementById("submit_btn");
 submit.onclick=function()
 {
-    alert("I am working");
+   
     var names=["name1","name2","name3","name3"];
     var List='';
     for(i=0;i<names.length;i++)
@@ -36,7 +36,7 @@ submit.onclick=function()
     List+="<li>"+names[i];+"</li>";
     }
     
-    var ul=documnet.document.getElementById("nameList");
+    var ul=document.getElementById("nameList");
     ul.innerHTML=List;
     
 };
