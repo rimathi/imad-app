@@ -76,6 +76,12 @@ app.get('/hash/:input',function(req,res)
     res.send(hashedString);
 });
 
+app.get('/create-user',function()
+{
+   var salt= crypto.getRandomBytes(128).toString();
+   var dbString=hash(password,salt)
+    
+});
 
 
 var pool=new Pool(config);
