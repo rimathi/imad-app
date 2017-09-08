@@ -81,7 +81,7 @@ app.get('/hash/:input',function(req,res)
     res.send(hashedString);
 });
 
-app.post('/create-user',function()
+app.post('/createuser',function()
 {
     var username=req.body.username;
     var password=req.body.password;
