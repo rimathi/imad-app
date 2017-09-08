@@ -82,8 +82,8 @@ app.get('/hash/:input',function(req,res)
     var hashedString=hash(req.params.input,"this-is-some-random-string");
     res.send(hashedString);
 });
-
-app.post('/createuser',function()
+var pool=new Pool(config);
+app.post('/create-user',function()
 {
     var username=req.body.username;
     var password=req.body.password;
@@ -108,7 +108,7 @@ res.send("The User has been created succesfully:"+username);
 });
 
 
-var pool=new Pool(config);
+
 
 app.get('/test',function(req,res){
 //make a select request
