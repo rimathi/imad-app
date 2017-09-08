@@ -5,7 +5,7 @@ var Pool=require('pg').Pool;
 var crypto = require('crypto');
 var bodyparser=require('body-parser');
 
-app.use(bodyparser.json());
+
 var config={
 user:"rimathivanan",
 database:"rimathivanan",
@@ -17,6 +17,7 @@ password:process.env.DB_PASSWORD
 
 
 var app = express();
+app.use(bodyparser.json());
 app.use(morgan('combined'));
     function createTemplate(data)
     {
