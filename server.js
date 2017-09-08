@@ -133,7 +133,7 @@ else
         var hashPassword=hash(password,salt)
         if(hashPassword===dbString)
         {
-        res.send("credential is correct")
+        res.send("credential is correct");
         }
         else
         {
