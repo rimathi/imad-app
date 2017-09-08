@@ -130,7 +130,7 @@ else
     {
         var dbString=result.rows[0].password;
         var salt=dbString.split('$')[2];
-        var hashPassword=hash(password,salt)
+        var hashPassword=hash(password,salt);
         if(hashPassword===dbString)
         {
         res.send("credential is correct");
