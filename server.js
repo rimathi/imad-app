@@ -5,7 +5,7 @@ var Pool=require('pg').Pool;
 var crypto = require('crypto');
 var bodyparser=require('body-parser');
 
-
+var app = express();
 var config={
 user:"rimathivanan",
 database:"rimathivanan",
@@ -16,7 +16,7 @@ password:process.env.DB_PASSWORD
 
 
 
-var app = express();
+
 app.use(bodyparser.json());
 app.use(morgan('combined'));
     function createTemplate(data)
@@ -83,7 +83,7 @@ app.get('/hash/:input',function(req,res)
     res.send(hashedString);
 });
 var pool=new Pool(config);
-app.post('/create-user',function()
+app.post('/create-user',function(req,res)
 {
     var username=req.body.username;
     var password=req.body.password;
