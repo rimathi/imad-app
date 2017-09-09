@@ -164,6 +164,14 @@ res.send("You are not Login");
 }
 });
 
+
+
+app.get("/logout",function(req,res){
+delete.req.session.auth;
+res.send("logged out");
+});
+
+
 app.get('/test',function(req,res){
 //make a select request
 //return response with the results
