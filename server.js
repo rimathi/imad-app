@@ -16,7 +16,7 @@ password:process.env.DB_PASSWORD
 };
 app.use({
     secret:"SomeRandaomSecretVale",
-    cookie:{maxAge:1000*60*60*24*30}
+    cookie:"{maxAge:1000*60*60*24*30}"
     
 });
 app.use(bodyparser.json());
