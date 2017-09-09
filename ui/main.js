@@ -1,7 +1,7 @@
 //submit username/login
-var submint=document.getElementById("submit_btn");
+var submit=document.getElementById("submit_btn");
 
-button.onclick=function()
+submit.onclick=function()
 {
   
 request=new XMLHttpRequest();
