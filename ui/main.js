@@ -13,16 +13,15 @@ request.onreadystatechange = function () {
     {
     if(request.status===200)
     {
-        var counter=request.responseText;
-        var span=document.getElementById("count");
-        span.innerHTML=counter.toString();
+        console.log("user loged in");
+        alert("User loged sucessfully");
     }
     }
    };
    
-   var username=document.getElementById("username");
-   var password=document.getElementById("password");
-   request.open("Post","http://rimathivanan.imad.hasura-app.io",true);
+   var username=document.getElementById("username").value;
+   var password=document.getElementById("password").value;
+   request.open("Post","http://rimathivanan.imad.hasura-app.io/login",true);
    request.send(JSON.strinfigy({username:username,password:password}));
 };
 
