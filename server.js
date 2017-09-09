@@ -14,11 +14,11 @@ host:"db.imad.hasura-app.io",
 port:"5432",
 password:process.env.DB_PASSWORD
 };
-app.use({
+app.use(session({
     secret:"SomeRandaomSecretVale",
     cookie:"{maxAge:1000*60*60*24*30}"
     
-});
+}));
 app.use(bodyparser.json());
 app.use(morgan('combined'));
     function createTemplate(data)
