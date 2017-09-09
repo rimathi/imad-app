@@ -31,7 +31,8 @@ request.onreadystatechange = function () {
    var username=document.getElementById("username").value;
    var password=document.getElementById("password").value;
    request.open("Post","http://rimathivanan.imad.hasura-app.io/login",true);
-   request.send(JSON.strinfigy({username:username,password:password}));
+   request.setRequestHeader('Content-Type',"application/json");
+   request.send(JSON.stringify({username:username,password:password}));
 };
 
 
