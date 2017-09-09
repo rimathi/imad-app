@@ -1,5 +1,6 @@
+//submit username/login
+var submint=document.getElementById("submit_btn");
 
-var button=document.getElementById("counter");
 button.onclick=function()
 {
   
@@ -18,28 +19,16 @@ request.onreadystatechange = function () {
     }
     }
    };
-   request.open("Get","http://rimathivanan.imad.hasura-app.io/counter",true);
-   request.send(null);
-};
-
-
-var nameInput=document.getElementById("name");
-//var nam=nameInput.value;
-var submit=document.getElementById("submit_btn");
-submit.onclick=function()
-{
    
-    var names=["name1","name2","name3","name4"];
-    var List='';
-    for(i=0;i<names.length;i++)
-    {
-    List+="<li>"+names[i];+"</li>";
-    }
-    
-    var ul=document.getElementById("nameList");
-    ul.innerHTML=List;
-    
+   var username=document.getElementById("username");
+   var password=document.getElementById("password");
+   request.open("Post","http://rimathivanan.imad.hasura-app.io",true);
+   request.send(JSON.strinfigy({username:username,password:password}));
 };
+
+
+
+
 
 
         
