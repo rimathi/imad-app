@@ -4,6 +4,7 @@ var path = require('path');
 var Pool=require('pg').Pool;
 var crypto = require('crypto');
 var bodyparser=require('body-parser');
+var session=require('express-session');
 
 var app = express();
 var config={
@@ -13,10 +14,12 @@ host:"db.imad.hasura-app.io",
 port:"5432",
 password:process.env.DB_PASSWORD
 };
-
-
-
-
+app.use({
+    secret:"SomeRandaomSecretVale",
+    cookie:{maxAge:1000*60*60*24*30}
+    
+}
+    )
 app.use(bodyparser.json());
 app.use(morgan('combined'));
     function createTemplate(data)
