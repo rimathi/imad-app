@@ -16,6 +16,15 @@ request.onreadystatechange = function () {
         console.log("user loged in");
         alert("User loged sucessfully");
     }
+    else if(request.status===403)
+    {
+        alert("Username/Password is incorrect");
+    }
+    else if(request.status===500)
+    {
+        alert("Some the went wrong on the server");
+    }
+    
     }
    };
    
